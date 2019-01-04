@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: bdd-cucumber-spring
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: ravi_kalla
+Implementation-Vendor-Id: in.ravikalla
+Build-Jdk: 1.8.0_144
+Implementation-URL: http://projects.spring.io/spring-boot/bdd-cucumber
+ -spring/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
