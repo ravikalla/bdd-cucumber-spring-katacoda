@@ -202,7 +202,7 @@
 					</descriptorRefs>
 					<archive>
 					  <manifest>
-						<mainClass>com.thehartford.onlineacc.StartApplication</mainClass>
+						<mainClass>in.ravikalla.onlineacc.StartApplication</mainClass>
 					  </manifest>
 					</archive>
 
