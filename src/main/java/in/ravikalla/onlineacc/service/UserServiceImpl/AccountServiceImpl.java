@@ -1,6 +1,8 @@
 package in.ravikalla.onlineacc.service.UserServiceImpl;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static in.ravikalla.onlineacc.util.AppConstants.EXTERNAL_BANK_URL;
+import static in.ravikalla.onlineacc.util.AppConstants.EXTERNAL_BANK_URL_DEPOSIT;
+import static in.ravikalla.onlineacc.util.AppConstants.EXTERNAL_BANK_URL_WITHDRAW;
 
 import java.math.BigDecimal;
 import java.security.Principal;
@@ -15,7 +17,6 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import in.ravikalla.onlineacc.controller.UserController;
 import in.ravikalla.onlineacc.dao.PrimaryAccountDao;
 import in.ravikalla.onlineacc.dao.SavingsAccountDao;
 import in.ravikalla.onlineacc.domain.PrimaryAccount;
@@ -26,9 +27,6 @@ import in.ravikalla.onlineacc.domain.User;
 import in.ravikalla.onlineacc.service.AccountService;
 import in.ravikalla.onlineacc.service.TransactionService;
 import in.ravikalla.onlineacc.service.UserService;
-import in.ravikalla.onlineacc.util.AppConstants;
-
-import static in.ravikalla.onlineacc.util.AppConstants.*;
 @Service
 public class AccountServiceImpl implements AccountService {
 	private static final Logger L = LogManager.getLogger(AccountServiceImpl.class);
